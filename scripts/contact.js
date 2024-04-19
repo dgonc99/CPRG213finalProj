@@ -8,11 +8,11 @@ const submitButton = document.getElementById('submit-button');
 const contactPage = document.getElementById('contact-page');
 const message = document.createElement('p');
 
-submitButton.addEventListener('click', () =>
+submitButton.addEventListener('click', function()
 {
     contactPage.innerHTML = '';
     message.textContent = "Thank you for your message!";
     message.style.fontSize = '24px';
     message.style.height = '600px';
     contactPage.appendChild(message);
-})
+});
